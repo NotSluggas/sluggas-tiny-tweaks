@@ -8,23 +8,16 @@
 		"NotSluggas"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/NotSluggas/sluggas-tiny-tweaks"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/sluggas_tiny_tweaks/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"dev.sluggas.tinytweaks.SluggasTinyTweaks"
-		],
-		"fabric-datagen": [
-			"dev.sluggas.tinytweaks.SluggasTinyTweaksDataGenerator"
 		]
 	},
-	"mixins": [
-		"sluggas_tiny_tweaks.mixins.json"
-	],
 	"depends": {
 		"fabricloader": ">=0.18.4",
 		"minecraft": "~1.21.11",

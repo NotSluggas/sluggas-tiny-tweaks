@@ -1,14 +1,17 @@
 {
 	"schemaVersion": 1,
 	"id": "sluggas_tiny_tweaks",
-	"version": "Alpha 1.0.0",
+	"version": "1.0.0 Alpha",
 	"name": "Sluggas' Tiny Tweaks",
 	"description": "Tweaking random things about the game",
 	"authors": [
 		"NotSluggas"
 	],
 	"contact": {
-		"sources": "https://github.com/NotSluggas/sluggas-tiny-tweaks"
+		"sources": "https://github.com/NotSluggas/sluggas-tiny-tweaks",
+		"issues": "https://github.com/NotSluggas/sluggas-tiny-tweaks/issues",
+		"modrinth": "https://modrinth.com/project/sluggas-tiny-tweaks",
+		"homepage": "https://modrinth.com/project/sluggas-tiny-tweaks"
 	},
 	"license": "MIT",
 	"icon": "assets/sluggas_tiny_tweaks/icon.png",

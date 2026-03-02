@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "sluggas_tiny_tweaks:item/end_shard"
+  }
+}

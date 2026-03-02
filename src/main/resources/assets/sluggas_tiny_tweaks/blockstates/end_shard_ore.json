@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "sluggas_tiny_tweaks:block/end_shard_ore" }
+  }
+}

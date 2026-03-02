@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "sluggas_tiny_tweaks",
+	"version": "Alpha 1.0.0",
+	"name": "Sluggas' Tiny Tweaks",
+	"description": "Tweaking random things about the game",
+	"authors": [
+		"NotSluggas"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/sluggas_tiny_tweaks/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.sluggas.tinytweaks.SluggasTinyTweaks"
+		],
+		"fabric-datagen": [
+			"dev.sluggas.tinytweaks.SluggasTinyTweaksDataGenerator"
+		]
+	},
+	"mixins": [
+		"sluggas_tiny_tweaks.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

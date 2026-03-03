@@ -33,10 +33,11 @@ public class ModBlocks {
 
     // End Shard Cluster
     public static final Block END_SHARD_CLUSTER = new Block(AbstractBlock.Settings.create()
+            .luminance(state -> 3)
             .registryKey(keyOfBlock("end_shard_cluster"))
-            .strength(3.5f) // slightly stronger since it's condensed
+            .strength(3.5f)
             .requiresTool()
-            .sounds(BlockSoundGroup.AMETHYST_BLOCK));
+            .sounds(BlockSoundGroup.STONE));
 
     private static void registerBlock(String name, Block block) {
         Identifier id = Identifier.of(SluggasTinyTweaks.MOD_ID, name);

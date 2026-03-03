@@ -24,11 +24,19 @@ public class ModBlocks {
         return RegistryKey.of(RegistryKeys.ITEM, Identifier.of(SluggasTinyTweaks.MOD_ID, name));
     }
 
+    // End Shard Ore
     public static final Block END_SHARD_ORE = new Block(AbstractBlock.Settings.create()
             .registryKey(keyOfBlock("end_shard_ore"))
             .strength(3.4f)
             .requiresTool()
             .sounds(BlockSoundGroup.STONE));
+
+    // End Shard Cluster
+    public static final Block END_SHARD_CLUSTER = new Block(AbstractBlock.Settings.create()
+            .registryKey(keyOfBlock("end_shard_cluster"))
+            .strength(3.5f) // slightly stronger since it's condensed
+            .requiresTool()
+            .sounds(BlockSoundGroup.AMETHYST_BLOCK));
 
     private static void registerBlock(String name, Block block) {
         Identifier id = Identifier.of(SluggasTinyTweaks.MOD_ID, name);
@@ -45,9 +53,15 @@ public class ModBlocks {
     public static void registerModBlocks() {
 
         registerBlock("end_shard_ore", END_SHARD_ORE);
-        //add to creative inv
+        registerBlock("end_shard_cluster", END_SHARD_CLUSTER);
+
+// add to creative inv
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(content -> {
             content.addAfter(Items.END_STONE, END_SHARD_ORE);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(content -> {
+            content.addAfter(Items.LAPIS_BLOCK, END_SHARD_CLUSTER);
         });
     }
 }

@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "sluggas_tiny_tweaks",
-	"version": "1.0.0 Alpha",
+	"version": "1.0.1 Alpha",
 	"name": "Sluggas' Tiny Tweaks",
 	"description": "Tweaking random things about the game",
 	"authors": [
@@ -10,7 +10,6 @@
 	"contact": {
 		"sources": "https://github.com/NotSluggas/sluggas-tiny-tweaks",
 		"issues": "https://github.com/NotSluggas/sluggas-tiny-tweaks/issues",
-		"modrinth": "https://modrinth.com/project/sluggas-tiny-tweaks",
 		"homepage": "https://modrinth.com/project/sluggas-tiny-tweaks"
 	},
 	"license": "MIT",

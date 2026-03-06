@@ -16,21 +16,12 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
-    private static RegistryKey<Block> keyOfBlock(String name) {
-        return RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SluggasTinyTweaks.MOD_ID, name));
-    }
-
-    private static RegistryKey<Item> keyOfItem(String name) {
-        return RegistryKey.of(RegistryKeys.ITEM, Identifier.of(SluggasTinyTweaks.MOD_ID, name));
-    }
-
     // End Shard Ore
     public static final Block END_SHARD_ORE = new Block(AbstractBlock.Settings.create()
             .registryKey(keyOfBlock("end_shard_ore"))
             .strength(3.4f)
             .requiresTool()
             .sounds(BlockSoundGroup.STONE));
-
     // End Shard Cluster
     public static final Block END_SHARD_CLUSTER = new Block(AbstractBlock.Settings.create()
             .luminance(state -> 3)
@@ -38,6 +29,14 @@ public class ModBlocks {
             .strength(3.5f)
             .requiresTool()
             .sounds(BlockSoundGroup.STONE));
+
+    private static RegistryKey<Block> keyOfBlock(String name) {
+        return RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(SluggasTinyTweaks.MOD_ID, name));
+    }
+
+    private static RegistryKey<Item> keyOfItem(String name) {
+        return RegistryKey.of(RegistryKeys.ITEM, Identifier.of(SluggasTinyTweaks.MOD_ID, name));
+    }
 
     private static void registerBlock(String name, Block block) {
         Identifier id = Identifier.of(SluggasTinyTweaks.MOD_ID, name);

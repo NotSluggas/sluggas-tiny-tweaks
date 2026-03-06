@@ -12,10 +12,10 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-
+// End Shard
     public static final Item END_SHARD = registerItem("end_shard", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(SluggasTinyTweaks.MOD_ID, "end_shard")))));
-
+// Grilled Carrot
     public static final Item GRILLED_CARROT = registerItem("grilled_carrot", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(SluggasTinyTweaks.MOD_ID, "grilled_carrot")))
             .food(new FoodComponent.Builder().nutrition(4).saturationModifier(1.0f).build())));
